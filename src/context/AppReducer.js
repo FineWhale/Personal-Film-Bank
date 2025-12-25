@@ -1,5 +1,5 @@
 // tells what to do with the data
-export default (state, action) => {
+const AppReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_WATCHLIST":
       return {
@@ -25,3 +25,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default AppReducer;
