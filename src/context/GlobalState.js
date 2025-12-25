@@ -22,9 +22,18 @@ export const GlobalProvider = (props) => {
     localStorage.setItem("watchlist", JSON.stringify(state.watchlist));
     localStorage.setItem("watched", JSON.stringify(state.watched));
   }, [state]);
+
   // actions
   const addMovieToWL = (movie) => {
     dispatch({ type: "ADD_TO_WATCHLIST", payload: movie });
+  };
+
+  const removeMovieFromWL = (id) => {
+    dispatch({ type: "REMOVE_FROM_WATCHLIST", payload: id });
+  };
+
+  const addMovieToWatched = (movie) => {
+    dispatch({ type: "ADD_TO_WATCHED", payload: movie });
   };
 
   return (
@@ -33,6 +42,8 @@ export const GlobalProvider = (props) => {
         watchlist: state.watchlist,
         watched: state.watched,
         addMovieToWL,
+        removeMovieFromWL,
+        addMovieToWatched,
       }}
     >
       {props.children}
