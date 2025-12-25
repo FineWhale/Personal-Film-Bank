@@ -19,7 +19,18 @@ export const Watched = () => {
             ))}
           </div>
         ) : (
-          <h2 className="no-movies">No movies yet</h2>
+          <div className="no-content">
+            <pre className="ascii-art">{`
+  ⠀⠀⠠⠄⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠁⠀⠀⢀⡠⠤⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⠤⠤⠀⠀⠀⠀
+  ⠀⠀⠘⠃⠀⠀⣀⡠⠔⠁⠀⠀⠀⠈⢦⠀⠀⠀⠀⢠⡖⠋⠉⠉⠻⡒⠈⠁⠀⠀
+  ⠀⠀⢠⠔⠉⠁⠀⠀⠄⠀⠀⠀⠠⣴⣦⣧⠀⠀⢠⣿⠃⢀⠀⠀⠀⠸⠈⢂⠀⠀
+  ⠀⢠⠁⠀⠀⠀⠀⠀⠀⠀⠀⢠⢳⣿⣿⣿⣄⠄⠉⠁⡔⠞⠢⡀⠀⠀⠀⠀⢄⡀
+  ⣐⣺⡀⠀⠀⠀⠀⠀⠀⠀⠀⡆⣼⣿⣿⡿⠀⠤⠤⠤⠏⠀⠀⠁⠀⠀⢆⠀⠀⡡
+  ⠈⠋⠈⠒⠦⠤⠤⠒⠒⠒⠒⠧⣻⡿⠟⠳⠤⠤⠤⠤⠤⠤⠔⠑⠒⠊⠀⠁⠂⠁
+              `}</pre>
+            <h2 className="no-movies-text">Let's watch some this weekend!</h2>
+          </div>
         )}
       </div>
     </div>

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 :root {
-    --primary: #032541;
-    --secondary: #21d07a;
+    --primary: #0f2854;
+    --secondary: #4988c4;
     --white: #fff;
 }
 
@@ -282,6 +282,23 @@ header .nav-links li:last-child {
 
 .movie-page .no-movies {
     color: #c4c4c4;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+}
+
+.ascii-art {
+    font-family: monospace;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #999;
+    text-align: center;
+    margin: 20px auto;
+    white-space: pre;
+}
+
+.no-movies-text {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    margin-top: 20px;
 }
